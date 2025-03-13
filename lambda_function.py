@@ -4,8 +4,6 @@ from crypto_info import CryptoInfo
 
 def lambda_handler(event, context):
 
-    return {"statusCode": 200, "body": json.dumps("Hello from Lambda!")}
-
     symbol = None
     try:
         query_params = event.get('queryStringParameters', {})
